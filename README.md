@@ -11,22 +11,15 @@ enabled) at: `https://tmanyika487.github.io/tanatswa-manyika-profile/`
 
 Accessibility: Peer Review Issue & Fix
 
-Issue found by peer reviewer (Thursday's practical session):
-My peer reviewer flagged that images on my draft page had missing or poor
-`alt` text, meaning screen reader users would either hear nothing useful
-or hear a meaningless filename when reaching an image.
+Issue found by peer reviewer:
+My peer reviewer flagged that images on my draft page had missing or poor `alt` text, meaning screen reader users would either see nothing useful or see a meaningless filename when reaching an image.
 
 Fix applied:
-- The avatar graphic in the header is a purely decorative inline SVG, so I
-  gave it `alt=""` and `aria-hidden="true"` so screen readers skip over it
-  entirely instead of announcing something meaningless.
-- I audited every other visual element on the page (icons, decorative
-  markers) and applied the same rule consistently: meaningful `alt` text
-  for anything that conveys information, and `alt=""`/`aria-hidden="true"`
-  for anything purely decorative.
-- Going forward, any real photo I add to this page (e.g. a profile photo)
-  will get descriptive `alt` text describing what's actually in the image,
-  not just a filename or "photo of me."
+
+1. I updated the profile image to include descriptive `alt` text so screen reader users can understand what the image represents.
+2. I audited every other visual element on the page, including icons and decorative markers, and applied the same rule consistently: meaningful `alt` text for anything that conveys information, and `alt=""` or `aria-hidden="true"` for anything purely decorative.
+3. Going forward, any real photo I add to this page will have descriptive `alt` text that explains what is actually shown in the image.
+
 
 AI-Assisted Content
 
@@ -48,14 +41,14 @@ Structure
 
 Notes on Requirements Covered
 
-- **Semantic structure:** `<header>`, `<nav>`, `<main>`, multiple
+- Semantic structure: `<header>`, `<nav>`, `<main>`, multiple
   `<section>`s, an `<aside>` (Quick Facts), an `<article>` (Project entry),
   and `<footer>`, with heading levels nested `h1 → h2 → h3` without skipping.
-- **Contact form:** name (`text`), `email`, `tel`, a `select` dropdown, and
+- Contact form: name (`text`), `email`, `tel`, a `select` dropdown, and
   a `textarea`, each with a properly associated `<label for="">`/`id` pair
   and native HTML5 validation (`required`, `pattern`, `minlength`,
   `maxlength`) — no JavaScript involved.
-- **Accessibility:** all inputs labelled, decorative graphic marked
+- Accessibility: all inputs labelled, decorative graphic marked
   `alt=""`/`aria-hidden`, and text/background color pairings checked for
   readable contrast (dark teal on white/near-white, and white on dark
   teal).
