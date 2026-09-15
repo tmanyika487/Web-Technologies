@@ -6,8 +6,7 @@ project entry, and a working, natively-validated Contact Me form.
 
 Live Page
 
-Open `My Profile.html` in a browser, or view it directly on GitHub Pages (if
-enabled) at: `https://tmanyika487.github.io/tanatswa-manyika-profile/`
+Open `My Profile.html` in a browser, or view it directly on GitHub Pages at: `https://tmanyika487.github.io/tanatswa-manyika-profile/`
 
 Accessibility: Peer Review Issue & Fix
 
