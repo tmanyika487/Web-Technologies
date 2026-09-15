@@ -49,12 +49,12 @@ page, as required for Part C of the assignment.
 4. Reflection
 
 The AI's first draft ignored my own constraint against words like
-"highly motivated," "passionate," "dynamic," and "thrive" that all showed up
-despite me explicitly asking to avoid that kind of language, and it made
+"highly motivated," "passionate," "dynamic," and "thrive" that were included
+despite me asking to avoid that kind of language, and it made
 me sound like a finished professional rather than a student who is still
-learning. I rewrote it almost entirely in my own words, replacing the vague
-claims ("deliver clean, efficient, impactful solutions") with something
+learning. I rewrote most of it in my own words, replacing the vague
+claims like "deliver clean, efficient, impactful solutions" with something
 specific and true to where I actually am right now, which is still building
 fundamentals. I also mentioned the practical habits this course is teaching 
 me such as version control and accessibility since that is part of what 
-I'm learning this semester, not something the AI could have known to include.
+I'm learning this semester.
