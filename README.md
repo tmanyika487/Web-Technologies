@@ -1,12 +1,12 @@
 Tanatswa Manyika — Profile / Mini-Portfolio
 
 A one-page, semantic HTML5 personal profile and mini-portfolio site built as
-coursework for Unit II, featuring an About Me section, a skills list, a
+coursework for Web Technologies, featuring an About Me section, a skills list, a
 project entry, and a working, natively-validated Contact Me form. 
 
 Live Page
 
-Open `index.html` in a browser, or view it directly on GitHub Pages (if
+Open `My Profile.html` in a browser, or view it directly on GitHub Pages (if
 enabled) at: `https://tmanyika487.github.io/tanatswa-manyika-profile/`
 
 Accessibility: Peer Review Issue & Fix
@@ -39,7 +39,7 @@ critically revised. See [`PROMPT_LOG.md`](./PROMPT_LOG.md) for:
 
 Structure
 
-- `index.html` — the semantic HTML5 page (header, nav, main with sections,
+- `My Profile.html` — the semantic HTML5 page (header, nav, main with sections,
   an aside, an article, and a footer)
 - `style.css` — page styling, including layout, color contrast, and a
   small responsive breakpoint
