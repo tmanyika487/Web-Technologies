@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanatswa Manyika | Profile & Mini-Portfolio</title>
+    <title>My Personal profile</title>
     <meta name="description" content="Personal profile and mini-portfolio for Tanatswa Manyika, a Computer Information Systems student, including skills, background, and a contact form.">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-
-    <header class="site-header">
-        <div class="header-inner">
-            <div class="avatar">
+    <header class="site-header px-5 py-6 sm:px-8 lg:px-12">
+        <div class="avatar">
                 <img src="Profile.jpeg" alt="Tanatswa Manyika profile picture">
-            </div>
-            <div>
-                <h1>Tanatswa Manyika</h1>
-                <p class="tagline">Computer Information Systems Student</p>
-            </div>
         </div>
-
-        <nav aria-label="Page sections">
-            <ul>
+        <h1>Tanatswa Manyika</h1>
+        <p class="role-text text-base sm:text-lg">Computer Information Systems Student</p>
+        <nav class="mt-5" aria-label="Page sections">
+            <ul class="flex flex-wrap items-center gap-x-5 gap-y-3">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -29,30 +24,28 @@
             </ul>
         </nav>
     </header>
-
-    <main>
+    <main class="page-content mx-auto w-full max-w-6xl px-5 py-8 sm:px-8 sm:py-10 lg:px-12">
         <section id="about" aria-labelledby="about-heading">
             <h2 id="about-heading">About Me</h2>
             <p>
                 I am a Computer Information Systems student with a strong interest in coding and
                 how software systems are put together. I enjoy the process of taking a problem
                 apart, figuring out how the pieces should fit, and building something that
-                actually works, not just in theory but in a browser or on a screen someone
+                actually works, not just in theory, but in a browser or on a screen someone
                 else can use.
             </p>
             <p>
                 Right now I am focused on strengthening my fundamentals: writing clean, readable
-                code, understanding how the web works under the hood (HTML, CSS, and eventually
-                frameworks like Tailwind), and picking up good habits early, like version
-                control, accessibility, and documentation.
+                code, understanding how the web works under the hood, and picking up good habits
+                early, like version control, accessibility, and documentation.
             </p>
 
             <aside aria-labelledby="quick-facts-heading">
-                <h3 id="quick-facts-heading">Quick Facts</h3>
+                <h3 id="quick-facts-heading"><strong>Quick Facts</strong></h3>
                 <ul>
                     <li>Studying Computer Information Systems</li>
                     <li>Comfortable working in Python</li>
-                    <li>Currently learning semantic HTML, CSS3, and Tailwind CSS</li>
+                    <li>Currently learning semantic HTML and CSS3</li>
                     <li>Based in Harare, Zimbabwe</li>
                 </ul>
             </aside>
@@ -73,19 +66,19 @@
             <article>
                 <h3>This Profile Page</h3>
                 <p>
-                    A semantic, accessible mini-portfolio built with HTML5 as part of my Web
-                    Technologies coursework. It started as a practical-session draft and is being
+                    A semantic, accessible mini-portfolio built with HTML5 as part of my web
+                    development coursework. It started as a practical-session draft and is being
                     incrementally improved, including a working contact form and an
                     accessibility pass based on peer feedback.
                 </p>
             </article>
         </section>
 
-        <section id="contact" aria-labelledby="contact-heading">
+        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
             <h2 id="contact-heading">Contact Me</h2>
-            <p>You can also reach me directly at <a href="mailto:tmanyika@africau.edu">tmanyika@africau.edu</a> or on <a href="phone:0787232722">0787232722</a>.</p>
+            <p>You can also reach me directly at <a href="mailto:tmanyika@africau.edu">tmanyika@africau.edu</a> or on <a href="tel:0787232722">0787232722</a>.</p>
 
-            <form action="#" method="post">
+            <form class="contact-form mt-5 grid grid-cols-1 gap-4 md:grid-cols-2" action="#" method="post">
                 <div class="form-row">
                     <label for="name">Full name</label>
                     <input
@@ -119,6 +112,16 @@
                 </div>
 
                 <div class="form-row">
+                    <label for="age">Age</label>
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        min="1"
+                        max="120">
+                </div>
+
+                <div class="form-row">
                     <label for="reason">Reason for contact</label>
                     <select id="reason" name="reason" required>
                         <option value="">Please choose one</option>
@@ -129,7 +132,7 @@
                     </select>
                 </div>
 
-                <div class="form-row">
+                <div class="form-row message-row md:col-span-2">
                     <label for="message">Message</label>
                     <textarea
                         id="message"
@@ -141,14 +144,14 @@
                         required></textarea>
                 </div>
 
-                <button type="submit">Send Message</button>
+                <button class="submit-button md:col-span-2" type="submit">Send Message</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Tanatswa Manyika. Built with semantic HTML5 as part of coursework.</p>
+        <p>&copy; 2026 Tanatswa Manyika. Built with semantic HTML5, CSS Grid, Flexbox and Tailwind CSS as part of coursework.</p>
     </footer>
-
 </body>
 </html>
+
